@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>سياسة الخصوصية — مدى</title>
+  <meta name="description" content="كيف تتعامل مدى مع بياناتك.">
+  <link rel="canonical" href="https://kareemhekal.github.io/mada-landing/privacy">
+  <meta name="theme-color" content="#2F3A12">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <link rel="alternate" hreflang="ar" href="https://kareemhekal.github.io/mada-landing/privacy">
+  <link rel="alternate" hreflang="en" href="https://kareemhekal.github.io/mada-landing/en/privacy">
+  <link rel="alternate" hreflang="x-default" href="https://kareemhekal.github.io/mada-landing/privacy">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="مدى">
+  <meta property="og:locale" content="ar_EG">
+  <meta property="og:title" content="سياسة الخصوصية — مدى">
+  <meta property="og:description" content="كيف تتعامل مدى مع بياناتك.">
+  <meta property="og:url" content="https://kareemhekal.github.io/mada-landing/privacy">
+  <meta property="og:image" content="https://kareemhekal.github.io/mada-landing/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="سياسة الخصوصية — مدى">
+  <meta name="twitter:description" content="كيف تتعامل مدى مع بياناتك.">
+  <meta name="twitter:image" content="https://kareemhekal.github.io/mada-landing/og-image.png">
+
+  <link rel="icon" type="image/png" href="/mada-landing/favicon.png">
+  <link rel="preload" href="/mada-landing/fonts/BalooBhaijaan2-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/mada-landing/fonts/MadaTag-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Inlined: one stylesheet this small costs more as a request than as bytes,
+       and render-blocking CSS is what Core Web Vitals punishes.
+       Tokens: the Mada design system v3 (olive + white, olive lines, the
+       hard light-olive drop; Mada Tag for titles, Baloo Bhaijaan 2 for text). -->
+  <style>
+    @font-face { font-family: 'Mada Tag'; src: url('/mada-landing/fonts/MadaTag-Regular.woff2') format('woff2'); font-display: swap; }
+    @font-face { font-family: 'Baloo Bhaijaan 2'; src: url('/mada-landing/fonts/BalooBhaijaan2-Variable.woff2') format('woff2'); font-weight: 400 800; font-display: swap; }
+    :root {
+      --paper: #F6F6EF; --surface: #FFFFFF; --sunken: #EEEFE3; --inverse: #2F3A12;
+      --line: #E1E3D2; --stroke: #566424; --ink: #20260F; --ink-2: #50573D;
+      --ink-3: #6A705A; --ink-inverse: #F5F4EE; --olive: #566424; --olive-strong: #434E1B;
+      --olive-ink: #4C5820; --olive-tint: #E8ECD5; --on-olive: #FFFFFF; --drop: #CBD59C;
+      --focus: #4C5820;
+      --tag: 'Mada Tag', 'Baloo Bhaijaan 2', system-ui, sans-serif;
+      --body: 'Baloo Bhaijaan 2', system-ui, -apple-system, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #151910; --surface: #1C2116; --sunken: #181C12; --inverse: #E8ECD5;
+        --line: #2B3220; --stroke: #9FB05A; --ink: #F1F3E6; --ink-2: #B7BEA2;
+        --ink-3: #8F977C; --ink-inverse: #20260F; --olive: #B3C46A; --olive-strong: #C9D88A;
+        --olive-ink: #C2D27C; --olive-tint: #283018; --on-olive: #151910; --drop: #3A4520;
+        --focus: #C2D27C;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--paper); color: var(--ink);
+      font-family: var(--body); font-size: 16px; line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--olive-ink); text-decoration: none; }
+    a:hover { text-decoration: underline; text-decoration-color: var(--drop); text-decoration-thickness: 3px; }
+    a:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 6px; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+    header.site {
+      background: var(--paper); border-bottom: 1.5px solid var(--line);
+      position: sticky; top: 0; z-index: 10;
+    }
+    header.site .wrap {
+      display: flex; align-items: center; gap: 20px;
+      min-height: 68px; flex-wrap: wrap;
+    }
+    header.site nav a { color: var(--ink-2); font-weight: 600; }
+    .brand { display: inline-flex; align-items: center; }
+    .brand img { display: block; width: 120px; height: auto; }
+    .grow { flex: 1; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 44px;
+      padding: 0 20px; border-radius: 12px; border: 1.5px solid var(--stroke);
+      background: var(--olive); color: var(--on-olive); font-weight: 600;
+      box-shadow: 3px 3px 0 var(--drop);
+      transition: transform .12s ease-out, box-shadow .12s ease-out, background-color .12s;
+    }
+    [dir="rtl"] .btn { box-shadow: -3px 3px 0 var(--drop); }
+    .btn:hover { background: var(--olive-strong); text-decoration: none; }
+    .btn:active { transform: translate(3px, 3px); box-shadow: none; }
+    [dir="rtl"] .btn:active { transform: translate(-3px, 3px); }
+    .btn.ghost { background: var(--surface); color: var(--ink); }
+    .btn + .btn { margin-inline-start: 12px; }
+    .btn.ghost:hover { background: var(--olive-tint); }
+    h1, h2 { font-family: var(--tag); font-weight: 400; letter-spacing: 0; }
+    h1 { font-size: clamp(36px, 6.5vw, 56px); line-height: 1.3; margin: 0 0 12px; }
+    h2 { font-size: clamp(24px, 3.6vw, 32px); line-height: 1.4; margin: 48px 0 12px; }
+    h3 { font-size: 17px; line-height: 1.5; margin: 0 0 4px; font-weight: 700; }
+    p.lede { font-size: 18px; line-height: 1.65; color: var(--ink-2); max-width: 62ch; }
+    .grid {
+      display: grid; gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      margin: 20px 0 0; padding: 0; list-style: none;
+    }
+    .card {
+      background: var(--surface); border: 1.5px solid var(--stroke);
+      border-radius: 18px; padding: 18px; display: block; color: inherit;
+      transition: transform .12s ease-out, box-shadow .12s ease-out;
+    }
+    .card:hover { text-decoration: none; transform: translate(-2px, -2px); box-shadow: 5px 5px 0 var(--drop); }
+    [dir="rtl"] .card:hover { transform: translate(2px, -2px); box-shadow: -5px 5px 0 var(--drop); }
+    .card .meta, p.meta { color: var(--ink-3); font-size: 14px; margin: 0; }
+    .pill {
+      display: inline-block; padding: 2px 12px; border-radius: 999px;
+      background: var(--olive-tint); color: var(--olive-ink); font-weight: 600;
+      font-size: 13px; margin: 0 0 6px 6px;
+    }
+    .hero { padding: 56px 0 8px; }
+    .hero h1 { text-decoration: underline; text-decoration-color: var(--drop); text-decoration-thickness: 7px; text-underline-offset: 10px; text-decoration-skip-ink: none; }
+    nav.crumbs { font-size: 14px; color: var(--ink-3); padding: 16px 0 0; }
+    footer.site {
+      margin-top: 72px; padding: 32px 0; background: var(--inverse);
+      color: var(--ink-inverse); font-size: 14px;
+    }
+    footer.site a { color: var(--ink-inverse); }
+    .empty { color: var(--ink-3); }
+    @media (max-width: 600px) { .hero { padding: 32px 0 4px; } header.site nav { order: 3; width: 100%; } }
+    @media (prefers-reduced-motion: reduce) { .btn, .card { transition: none; } }
+  </style>
+  
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="/mada-landing/" aria-label="مدى"><img src="/mada-landing/brand/mada-wordmark.png" alt="مدى" width="120" height="62"></a>
+      <span class="grow"></span>
+      
+      <a class="btn" href="/mada-landing/#waitlist">احجز مكانك</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <nav class="crumbs"><a href="/mada-landing/">الرئيسية</a> / سياسة الخصوصية · <a href="/mada-landing/en/privacy/">English</a></nav>
+<section class="hero"><h1>سياسة الخصوصية</h1></section>
+<p>آخر تحديث: 4 أكتوبر 2026</p>
+<p>الصفحة دي بتقولك بنجمع إيه عنك، وليه، ومين بيشوفه، وإزاي تتحكم فيه. بنمشي على قانون حماية البيانات الشخصية المصري رقم 151 لسنة 2020.</p>
+<h2>1. بنجمع إيه</h2>
+<ul><li><strong>بيانات الحساب</strong>: الاسم، والإيميل، والتليفون، ونوع الحساب، والصف، والمدرسة، وتاريخ الميلاد لو كتبته، والصورة، ولغة التطبيق. الباسورد متشفر ومحدش عندنا يقدر يشوفه.</li><li><strong>بيانات المذاكرة</strong>: الكورسات اللي اشتركت فيها، ووصلت لفين في كل فيديو، واتفرجت كام مرة، وإجاباتك ودرجاتك، وأخطاءك، ونشاطك اليومي.</li><li><strong>بيانات الدفع</strong>: مبالغ الشحن والشراء، والفواتير، ورصيد المحفظة. <strong>بيانات الكارت أو المحفظة الإلكترونية بتكتبها في صفحة كاشير، ومش بتوصلنا خالص.</strong></li><li><strong>بيانات السحب (للمدرس)</strong>: رقم المحفظة الإلكترونية أو الحساب البنكي واسم صاحبه، عشان نحوّل الفلوس.</li><li><strong>الرسايل</strong>: الرسايل بينك وبين المدرس ومساعديه.</li><li><strong>بيانات الجهاز</strong>: رمز الإشعارات، ونوع الجهاز، وإصدار التطبيق، وعنوان الـ IP، وتقارير الأعطال، وإحصائيات استخدام عامة.</li></ul>
+<h2>2. بنستخدمها في إيه</h2>
+<ul><li>نشغّل حسابك والتطبيق: نعرض الكورسات، ونشغّل الفيديوهات، ونصحح الامتحانات، ونمشّي المحفظة، ونحوّل للمدرس فلوسه.</li><li>نحمي المحتوى والحسابات: حدود المشاهدة، ورقم مميز لحسابك بيظهر على الفيديو عشان نعرف مصدر أي تسريب، ومنع الاحتيال.</li><li>نبعتلك الإشعارات اللي إنت اخترتها (من إعدادات الإشعارات)، والإيميلات الضرورية زي كود تغيير الباسورد.</li><li>نصلّح الأعطال ونحسّن التطبيق.</li><li>نحتفظ بالسجلات المالية زي ما القانون بيطلب.</li></ul>
+<p><strong>مش بنبيع بياناتك، ومش بنستخدمها في إعلانات.</strong></p>
+<h2>3. مين بيشوف بياناتك جوه التطبيق</h2>
+<ul><li><strong>المدرس</strong>: بيشوف طلابه في كورساته هو بس (الاسم، والصورة، والصف، والتليفون، والتقدم، والدرجات)، والرسايل اللي اتبعتتله.</li><li><strong>المساعد</strong>: بيشوف اللي المدرس سمحله بيه بس. تليفونات الطلاب وفلوس المدرس محتاجين صلاحية منفصلة.</li><li><strong>ولي الأمر المربوط</strong>: بيشوف تقدم الطالب ودرجاته ومدفوعاته، ومش بيشوف إجاباته بالتفصيل.</li><li><strong>باقي الطلاب</strong>: مش بيشوفوا أي حاجة من بياناتك.</li><li><strong>صفحة المدرس على الموقع</strong>: بتعرض اسمه ونبذة عنه وصورته وكورساته المنشورة.</li></ul>
+<h2>4. الشركات اللي بنشتغل معاها</h2>
+<p>بنستخدم خدمات شركات تانية عشان التطبيق يشتغل، وكل واحدة بتتعامل مع البيانات عشان تقدملنا الخدمة بس:</p>
+<ul><li><strong>Supabase</strong>: قاعدة البيانات وتسجيل الدخول (سيرفرات في ألمانيا).</li><li><strong>Cloudflare</strong>: تخزين الصور والفيديوهات والملفات.</li><li><strong>Google Firebase</strong>: الإشعارات، وتقارير الأعطال، والإحصائيات.</li><li><strong>كاشير (Kashier)</strong>: الدفع وتحويل فلوس المدرسين (مصر).</li><li><strong>خدمة إرسال الإيميلات</strong>: أكواد التحقق.</li></ul>
+<p>فيه منهم بيخزّنوا البيانات برّه مصر. ولو القانون أو جهة قضائية طلبت بيانات، ممكن نكون ملزمين نديها.</p>
+<h2>5. بنحتفظ بيها لحد إمتى</h2>
+<ul><li>بيانات حسابك: طول ما الحساب موجود.</li><li>لما تحذف حسابك: بنمسح بياناتك وملفاتك، ونحتفظ بالسجلات المالية بس (الفواتير والمعاملات مع الاسم ووسيلة التواصل) لمدة <strong>5 سنين</strong> عشان الحسابات ومنع الاحتيال، وبعدها بتتمسح.</li><li>النسخ الاحتياطية ممكن تفضل فترة قصيرة وبعدين تتمسح لوحدها.</li></ul>
+<h2>6. حقوقك</h2>
+<ul><li>تعرف إحنا محتفظين بإيه عنك وتاخد نسخة منه.</li><li>تعدّل بياناتك (أغلبها من صفحة حسابك).</li><li>تحذف حسابك (شوف صفحة &quot;حذف الحساب&quot;).</li><li>توقف الإشعارات في أي وقت.</li><li>تشتكي لمركز حماية البيانات الشخصية في مصر.</li></ul>
+<p>لأي حاجة من دول: masaredu.app@gmail.com</p>
+<h2>7. الأطفال</h2>
+<p>طلاب كتير عندنا أقل من 18 سنة. بناخد منهم اللي محتاجينه للمذاكرة بس، ومفروض الطالب يستخدم التطبيق بعلم ولي أمره. لو إنت ولي أمر وشايف إن ابنك سجّل من غير موافقتك، كلّمنا.</p>
+<h2>8. الأمان</h2>
+<p>الاتصال متشفر، وكل مستخدم مش بيقدر يشوف بيانات غيره، وجلسة الدخول بتتخزن بأمان على جهازك، والمدرس بيكتب الباسورد قبل ما يفتح المحفظة. ومع كده مفيش نظام آمن 100%، فخلي الباسورد بتاعك قوي ومتدّيهوش لحد.</p>
+<h2>9. على جهازك</h2>
+<p>التطبيق بيحفظ على جهازك جلسة الدخول وإعداداتك (اللغة والوضع الليلي). ونسخة الويب بتستخدم تخزين المتصفح لنفس الحاجة. مفيش ملفات تتبع إعلانية.</p>
+<h2>10. تواصل معانا</h2>
+<p>masaredu.app@gmail.com</p>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <p>مدى — منصة تعليمية مصرية. الفيديوهات والامتحانات والواجبات في مكان واحد.</p>
+      <p>
+        <a href="/mada-landing/terms/">شروط الاستخدام</a> ·
+        <a href="/mada-landing/privacy/">سياسة الخصوصية</a> ·
+        <a href="/mada-landing/payments/">الدفع والاسترداد</a> ·
+        <a href="/mada-landing/teacher-terms/">شروط المدرسين</a> ·
+        <a href="/mada-landing/content-policy/">سياسة المحتوى</a> ·
+        <a href="/mada-landing/delete-account/">حذف الحساب</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

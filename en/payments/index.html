@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment and Refund Policy — Mada</title>
+  <meta name="description" content="Wallet top-ups, purchases and refunds.">
+  <link rel="canonical" href="https://kareemhekal.github.io/mada-landing/en/payments">
+  <meta name="theme-color" content="#2F3A12">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <link rel="alternate" hreflang="ar" href="https://kareemhekal.github.io/mada-landing/payments">
+  <link rel="alternate" hreflang="en" href="https://kareemhekal.github.io/mada-landing/en/payments">
+  <link rel="alternate" hreflang="x-default" href="https://kareemhekal.github.io/mada-landing/payments">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="مدى">
+  <meta property="og:locale" content="ar_EG">
+  <meta property="og:title" content="Payment and Refund Policy — Mada">
+  <meta property="og:description" content="Wallet top-ups, purchases and refunds.">
+  <meta property="og:url" content="https://kareemhekal.github.io/mada-landing/en/payments">
+  <meta property="og:image" content="https://kareemhekal.github.io/mada-landing/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Payment and Refund Policy — Mada">
+  <meta name="twitter:description" content="Wallet top-ups, purchases and refunds.">
+  <meta name="twitter:image" content="https://kareemhekal.github.io/mada-landing/og-image.png">
+
+  <link rel="icon" type="image/png" href="/mada-landing/favicon.png">
+  <link rel="preload" href="/mada-landing/fonts/BalooBhaijaan2-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/mada-landing/fonts/MadaTag-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Inlined: one stylesheet this small costs more as a request than as bytes,
+       and render-blocking CSS is what Core Web Vitals punishes.
+       Tokens: the Mada design system v3 (olive + white, olive lines, the
+       hard light-olive drop; Mada Tag for titles, Baloo Bhaijaan 2 for text). -->
+  <style>
+    @font-face { font-family: 'Mada Tag'; src: url('/mada-landing/fonts/MadaTag-Regular.woff2') format('woff2'); font-display: swap; }
+    @font-face { font-family: 'Baloo Bhaijaan 2'; src: url('/mada-landing/fonts/BalooBhaijaan2-Variable.woff2') format('woff2'); font-weight: 400 800; font-display: swap; }
+    :root {
+      --paper: #F6F6EF; --surface: #FFFFFF; --sunken: #EEEFE3; --inverse: #2F3A12;
+      --line: #E1E3D2; --stroke: #566424; --ink: #20260F; --ink-2: #50573D;
+      --ink-3: #6A705A; --ink-inverse: #F5F4EE; --olive: #566424; --olive-strong: #434E1B;
+      --olive-ink: #4C5820; --olive-tint: #E8ECD5; --on-olive: #FFFFFF; --drop: #CBD59C;
+      --focus: #4C5820;
+      --tag: 'Mada Tag', 'Baloo Bhaijaan 2', system-ui, sans-serif;
+      --body: 'Baloo Bhaijaan 2', system-ui, -apple-system, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #151910; --surface: #1C2116; --sunken: #181C12; --inverse: #E8ECD5;
+        --line: #2B3220; --stroke: #9FB05A; --ink: #F1F3E6; --ink-2: #B7BEA2;
+        --ink-3: #8F977C; --ink-inverse: #20260F; --olive: #B3C46A; --olive-strong: #C9D88A;
+        --olive-ink: #C2D27C; --olive-tint: #283018; --on-olive: #151910; --drop: #3A4520;
+        --focus: #C2D27C;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--paper); color: var(--ink);
+      font-family: var(--body); font-size: 16px; line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--olive-ink); text-decoration: none; }
+    a:hover { text-decoration: underline; text-decoration-color: var(--drop); text-decoration-thickness: 3px; }
+    a:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 6px; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+    header.site {
+      background: var(--paper); border-bottom: 1.5px solid var(--line);
+      position: sticky; top: 0; z-index: 10;
+    }
+    header.site .wrap {
+      display: flex; align-items: center; gap: 20px;
+      min-height: 68px; flex-wrap: wrap;
+    }
+    header.site nav a { color: var(--ink-2); font-weight: 600; }
+    .brand { display: inline-flex; align-items: center; }
+    .brand img { display: block; width: 120px; height: auto; }
+    .grow { flex: 1; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 44px;
+      padding: 0 20px; border-radius: 12px; border: 1.5px solid var(--stroke);
+      background: var(--olive); color: var(--on-olive); font-weight: 600;
+      box-shadow: 3px 3px 0 var(--drop);
+      transition: transform .12s ease-out, box-shadow .12s ease-out, background-color .12s;
+    }
+    [dir="rtl"] .btn { box-shadow: -3px 3px 0 var(--drop); }
+    .btn:hover { background: var(--olive-strong); text-decoration: none; }
+    .btn:active { transform: translate(3px, 3px); box-shadow: none; }
+    [dir="rtl"] .btn:active { transform: translate(-3px, 3px); }
+    .btn.ghost { background: var(--surface); color: var(--ink); }
+    .btn + .btn { margin-inline-start: 12px; }
+    .btn.ghost:hover { background: var(--olive-tint); }
+    h1, h2 { font-family: var(--tag); font-weight: 400; letter-spacing: 0; }
+    h1 { font-size: clamp(36px, 6.5vw, 56px); line-height: 1.3; margin: 0 0 12px; }
+    h2 { font-size: clamp(24px, 3.6vw, 32px); line-height: 1.4; margin: 48px 0 12px; }
+    h3 { font-size: 17px; line-height: 1.5; margin: 0 0 4px; font-weight: 700; }
+    p.lede { font-size: 18px; line-height: 1.65; color: var(--ink-2); max-width: 62ch; }
+    .grid {
+      display: grid; gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      margin: 20px 0 0; padding: 0; list-style: none;
+    }
+    .card {
+      background: var(--surface); border: 1.5px solid var(--stroke);
+      border-radius: 18px; padding: 18px; display: block; color: inherit;
+      transition: transform .12s ease-out, box-shadow .12s ease-out;
+    }
+    .card:hover { text-decoration: none; transform: translate(-2px, -2px); box-shadow: 5px 5px 0 var(--drop); }
+    [dir="rtl"] .card:hover { transform: translate(2px, -2px); box-shadow: -5px 5px 0 var(--drop); }
+    .card .meta, p.meta { color: var(--ink-3); font-size: 14px; margin: 0; }
+    .pill {
+      display: inline-block; padding: 2px 12px; border-radius: 999px;
+      background: var(--olive-tint); color: var(--olive-ink); font-weight: 600;
+      font-size: 13px; margin: 0 0 6px 6px;
+    }
+    .hero { padding: 56px 0 8px; }
+    .hero h1 { text-decoration: underline; text-decoration-color: var(--drop); text-decoration-thickness: 7px; text-underline-offset: 10px; text-decoration-skip-ink: none; }
+    nav.crumbs { font-size: 14px; color: var(--ink-3); padding: 16px 0 0; }
+    footer.site {
+      margin-top: 72px; padding: 32px 0; background: var(--inverse);
+      color: var(--ink-inverse); font-size: 14px;
+    }
+    footer.site a { color: var(--ink-inverse); }
+    .empty { color: var(--ink-3); }
+    @media (max-width: 600px) { .hero { padding: 32px 0 4px; } header.site nav { order: 3; width: 100%; } }
+    @media (prefers-reduced-motion: reduce) { .btn, .card { transition: none; } }
+  </style>
+  
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="/mada-landing/" aria-label="مدى"><img src="/mada-landing/brand/mada-wordmark.png" alt="مدى" width="120" height="62"></a>
+      <span class="grow"></span>
+      
+      <a class="btn" href="/mada-landing/#waitlist">احجز مكانك</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <nav class="crumbs"><a href="/mada-landing/">Home</a> / Payment and Refund Policy · <a href="/mada-landing/payments/">العربية</a></nav>
+<section class="hero"><h1>Payment and Refund Policy</h1></section>
+<p>Last updated: 4 October 2026</p>
+<h2>1. Topping up</h2>
+<ul><li>You top up through Kashier: bank card, mobile wallet, or another method shown on the payment page.</li><li>There may be a top-up fee. The amount and who pays it are shown before you pay.</li><li>Balances are in Egyptian pounds.</li><li><strong>Student wallet</strong>: spent on Mada only; it <strong>cannot be withdrawn as cash</strong> or transferred to anyone.</li><li><strong>Teacher wallet</strong>: top-ups and earnings are one balance, used for plans and code fees, or withdrawn (see the Teacher Terms).</li><li>Slower methods (such as paying at a Fawry outlet) are credited automatically as soon as Kashier confirms.</li></ul>
+<h2>2. Buying</h2>
+<ul><li>The price is shown before you buy, taken from the wallet, and the content opens at once.</li><li>Some courses have a duration and some videos a view limit; these are shown on the course page and are part of the purchase.</li><li>Every top-up and purchase has an invoice in your account.</li></ul>
+<h2>3. Access codes</h2>
+<p>Some teachers sell codes outside the app. That arrangement and money are between you and the teacher; Mada is not part of it. A code opens the course once for one account, and Mada does not refund anything paid to the teacher.</p>
+<h2>4. No refunds</h2>
+<p>Content is digital and opens the moment you buy it, so <strong>all purchases and top-ups are final and not refunded</strong>, except:</p>
+<ul><li><strong>Charged but not credited</strong>, or charged twice: we check and credit your wallet or refund the payment method.</li><li><strong>The teacher removes you from a paid course</strong>: the price returns to your wallet automatically.</li><li><strong>A fault on our side</strong> kept you from content you bought and was not fixed in reasonable time after you told us.</li><li><strong>Any case where the law requires it</strong>, or where Mada decides on an exception.</li></ul>
+<p>Refunds go to your Mada wallet, except charge errors, which go back to the payment method. Access to a refunded course ends.</p>
+<h2>5. A problem with a payment?</h2>
+<p>Write to masaredu.app@gmail.com within 14 days, with the invoice or transaction number.</p>
+<h2>6. Bank disputes</h2>
+<p>If you dispute a payment with your bank before contacting us, we may suspend the account until it is resolved and deduct the reversed amount from your wallet.</p>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <p>مدى — منصة تعليمية مصرية. الفيديوهات والامتحانات والواجبات في مكان واحد.</p>
+      <p>
+        <a href="/mada-landing/terms/">شروط الاستخدام</a> ·
+        <a href="/mada-landing/privacy/">سياسة الخصوصية</a> ·
+        <a href="/mada-landing/payments/">الدفع والاسترداد</a> ·
+        <a href="/mada-landing/teacher-terms/">شروط المدرسين</a> ·
+        <a href="/mada-landing/content-policy/">سياسة المحتوى</a> ·
+        <a href="/mada-landing/delete-account/">حذف الحساب</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

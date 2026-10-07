@@ -1,0 +1,8 @@
+# The static site is what should be indexed.
+# /app/ is the Flutter build: it renders into a canvas, so there is
+# nothing there for a crawler to read.
+User-agent: *
+Allow: /
+Disallow: /app/
+
+Sitemap: https://kareemhekal.github.io/mada-landing/sitemap.xml
